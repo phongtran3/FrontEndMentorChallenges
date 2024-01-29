@@ -3,38 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
+
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
   <div class="container">
-      <section class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-        . Coded by
-        <a href="#">Phong Tran</a>
-        .
+    <div class="card">
+      <section class="header">
+        <img class="hero-image" src="assets/images/illustration-article.svg" alt="illustration">
+        <div class="header-text">
+          <a href="#" class="btn">Learning</a>
+          <p>Published 21 Dec 2023</p>
+        </div>
       </section>
+
+      <section class="main-content">
+        <h1 ><a href="#" class="main-title">HTML & CSS foundations</a></h1>
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </section>
+
+      <section class="profile">
+        <div class="profile-info">
+          <img class="profile-img" src="assets/images/image-avatar.webp" alt="profile picture">
+          <h3>Greg Hooper</h3>
+        </div>
+      </section>
+
     </div>
-  </body>
+  </div>
+
+  <div class="footer">
+    <section class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      . Coded by
+      <a href="#">Phong Tran</a>
+      .
+    </section>
+  </div>
+
 </body>
 </html>
