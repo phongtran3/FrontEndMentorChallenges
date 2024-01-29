@@ -3,26 +3,102 @@
 
 :root{
   --yellow: hsl(75, 94%, 57%);
-
   --White: hsl(0, 0%, 100%);
   --Grey: hsl(0, 0%, 20%);
   --darkGrey: hsl(0, 0%, 12%);
   --offBlack: hsl(0, 0%, 8%);
   --font-size-body: 14px;
-
   --font-family-body: "Inter", sans-serif;
-}
-
-a{
-  text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+  color: var(--yellow)
+}
+
+a:hover,
+a:focus{
+  opacity: .7;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  color: var(--White);
+  background-color: var(--offBlack);
+  font-size: var(--font-size-body)
+}
+
+img {
+  max-width: 100%;
+  width: 100px;
+  border-radius: 100%;
+}
+
 h1,
-h2{
+h3{
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: .75rem;
+}
+
+.container{
+  background-color: var(--darkGrey);
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+
+.footer{
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+
+.card{
+  padding: 1rem;
+  text-align: center;
+}
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro-text h3 {
+  color: var(--yellow);
+  margin: 1rem 0;
+}
+
+.social-link{
+  margin: 1rem 0;
+  display: block;
+}
+
+.btn{
+  color: var(--White);
+  background-color: var(--Grey);
+  padding: .75rem 0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn:hover,
+.btn:focus{
+  background-color: var(--yellow);
+  color: var(--offBlack);
+  opacity: 1;
 }
