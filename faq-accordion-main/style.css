@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightPink: hsl(275, 100%, 97%);
+  --grayishPurple: hsl(292, 16%, 49%);
+  --darkPurple: hsl(292, 42%, 14%);
+  --font-family-size: 16px;
+  --font-family-body: 'Work Sans', sans-serif;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover,
+a:focus{
+  opacity: .7;
+}
+
+h1,
+h4{
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  font-size: var(--font-family-size);
+  background: url('./assets/images/background-pattern-desktop.svg') no-repeat;
+  background-color: var(--lightPink)
+}
+
+.container{
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  border-radius: 8px;
+  margin: 2rem auto;
+  background-color: var(--white);
+  padding: 1.5rem;
+}
+
+.faq-content{
+  margin-bottom: 2rem;
+}
+
+.faq-heading{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.faq-dropdown {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-dropdown-header{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.faq-dropdown-header h4{
+  width: 80%;
+}
+
+.faq-dropdown-header:hover,
+.faq-dropdown-header:focus{
+  color: var(--grayishPurple);
+}
+
+.faq-icon{
+  background: url('./assets/images/icon-plus.svg');
+  background-size: cover;
+  background-color: inherit;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  transition: 0.3s ease;
+
+  /* position: absolute;
+  right: 10px;
+  top: 0px; */
+}
+
+.faq-dropdown-body{
+  margin: 1.5rem 0;
+}
+
+
+.faq-dropdown-body{
+  display: none;
+}
+.faq-dropdown-body.open{
+  display: block;
+}
+.faq-icon.open{
+  background: url('./assets/images/icon-minus.svg');
+  transition: .3s ease;
+}
+
+
+.footer{
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  margin: 2rem auto;
+}
