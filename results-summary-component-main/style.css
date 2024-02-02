@@ -20,7 +20,7 @@
   --violetBlue: hsla(256, 72%, 46%, 1);
   --persianBlue: hsla(241, 72%, 46%, 0);
 
-  --font-family-family: 'Hanken Grotesk', sans-serif;
+  --font-family-body: 'Hanken Grotesk', sans-serif;
   --font-size-body: 18px;
 
 }
@@ -33,6 +33,15 @@ a{
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  font-size: var(--font-family-size);
+}
 
 h1,
 h2,
@@ -41,3 +50,65 @@ h3{
   padding: 0;
 }
 
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container{
+  width: 80%;
+  max-width: 1400px;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card{
+  border: 1px solid red;
+  /* display: flex; */
+}
+
+
+.result{
+  color: var(--lightLavender);
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--lightSlateBlue), 
+    var(--lightRoyalBlue) 
+  );
+  padding: 1rem 2rem;
+  text-align: center;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem; 
+}
+
+
+.percentage{
+  border-radius: 50%;
+  width: 9em;
+  height: 9em;
+  background: linear-gradient(
+    to bottom,
+    var(--violetBlue), 
+    var(--persianBlue) 
+  );
+  padding: 1.5rem;
+  margin: 1rem auto;
+}
+
+.percentage h1 {
+  font-size: 2.75rem;
+  color: var(--white);
+}
+
+.result-text h2 {
+  color: var(--white);
+}
