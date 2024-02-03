@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 :root {
-  --lightRed: hsl(0, 100%, 67%);
-  --orangeyYellow: hsl(39, 100%, 56%);
-  --greenTeal: hsl(166, 100%, 37%);
-  --cobaltBlue: hsl(234, 85%, 45%);
+  --lightRed: hsl(0, 100%, 67%, 0.3);
+  --orangeyYellow: hsl(39, 100%, 56%, .3);
+  --greenTeal: hsl(166, 100%, 37%, .3);
+  --cobaltBlue: hsl(234, 85%, 45%, .3);
   
 
   --white: hsl(0, 0%, 100%);
@@ -50,6 +50,28 @@ h3{
   padding: 0;
 }
 
+.btn{
+  display: block;
+  text-align: center;
+  color: var(--white);
+  background: var(--darkGrayBlue);
+  padding: .75rem 0;
+  border-radius: 100px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn:hover,
+.btn:focus{
+  background: linear-gradient(
+    to bottom,
+    var(--lightSlateBlue), 
+    var(--lightRoyalBlue) 
+  );
+  opacity: 1;
+}
+
+
 
 .main{
   display: flex;
@@ -66,7 +88,6 @@ h3{
   border-radius: 8px;
   margin-bottom: 2rem;
   padding: 1.5rem;
-
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -111,4 +132,27 @@ h3{
 
 .result-text h2 {
   color: var(--white);
+}
+
+.summary{
+  padding: 1rem 2rem;
+}
+
+
+.summary-stat{
+  display: flex;
+  margin: 1rem 0;
+  border-radius: 8px;
+  padding: 0 .75rem;
+}
+
+.summary-stat-text{
+  margin-left: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.reaction{
+  background: var(--lightRed);
 }
