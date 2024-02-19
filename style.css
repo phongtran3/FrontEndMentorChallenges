@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body{
   margin: 0;
+  font-family:  "Inter", sans-serif;
  }
 
  img {
@@ -12,14 +16,12 @@ body{
 
  .hero{
   height: 100vh;
-  border: 1px solid red;
   background: #654ea3;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  }
 
  .hero-container {
-  border: 1px solid red;
   height: 100%;
   margin: 0 auto;
   width: 80%;
@@ -33,13 +35,34 @@ body{
 }
 
 .hero-text{
-  border: 1px solid red;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
+  color: #0e1111;
 }
 
 .accent{
   color: #33006F;
 }
 
+
+
+.hero-button{
+  /* color: var(--White);
+  background-color: var(--Grey); */
+  text-align: center;
+  padding: .75rem;
+  font-weight: 600;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-button:hover,
+.hero-button:focus{
+  /* border: 1px solid #9D77B3;
+  background-color: #9D77B3; */
+  border: 1px solid #800080;
+  color: #800080;
+  /* opacity: .85; */
+}
