@@ -77,25 +77,109 @@ h3 {
 .main-wrapper{
   width: 100%;
   padding: 1rem;
-
+  margin: 1.5rem 0;
 }
+
 .main-container{
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-
 .card-title{
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #eaafc8;
-  padding: 1rem;
+  padding: 2rem 1rem;
+}
+
+
+.card-title-link{
+  margin-right: .5rem;
+}
+
+.card-title-link:hover,
+.card-title-link:focus{
+  color: #33006F;
+  text-decoration: underline;
+}
+
+.card-title .fa-github:hover,
+.card-title .fa-github:focus{
+  color: #33006F;
 }
 
 .card{
   background: #fff;
   border: 1px solid rgb(219, 229, 230);
   border-radius: .5rem;
+  overflow: hidden; 
+}
+
+.card-image-container{
+  overflow: hidden;
+  display: flex;
+}
+
+.card-image-container img {
+  transition: transform 1s ease; 
+  
+}
+
+.card-image-container:hover img,
+.card-image-container:focus img{
+  transform: scale(1.1);
+}
+
+
+.footer{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem;
+}
+
+.footer-name{
+  font-weight: bold;
+}
+
+.social-links{
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.social-links:hover i,
+.social-links:focus i{
+  transform: scale(1.1);
+}
+
+
+
+@media (min-width: 500px) {
+  .hero-text{
+    font-size: 1.25rem;
+  }
+  .card{
+    width: calc(50% - .5rem);
+  }
+
+}
+
+@media (min-width: 1040px) {
+  .hero-text{
+    font-size: 1.5rem;
+  }
+  .card{
+    width: calc(33% - .5rem);
+  }
+
+  .footer{
+    padding: 1.25rem 1.75rem;
+  }
+
+
 }
