@@ -97,8 +97,9 @@ h3 {
 }
 
 
-.card-title-link{
+.card-title-link {
   margin-right: .5rem;
+  color: inherit;
 }
 
 .card-title-link:hover,
