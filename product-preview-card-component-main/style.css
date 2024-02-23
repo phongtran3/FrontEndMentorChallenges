@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --darkCyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-size-body: 14px;
+  --font-family-body: "Montserrat", sans-serif;
+  --font-family-header: "Fraunces", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+a:hover,
+a:focus{
+  opacity: .7;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mobile-img{
+  border-top-left-radius: 12px; 
+  border-top-right-radius: 12px;
+}
+
+h1,
+h2,
+h3{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  background: var(--cream)
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container{
+  background: var(--white);
+  width: 90%;
+  max-width: 1400px;
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+}
+
+.preview-category-text{
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  color: var(--darkGrayishBlue);
+  margin-bottom: .75rem;
+}
+
+.preview-header > h1 {
+  font-family: var(--font-family-header);
+}
+
+.preview-header > p {
+  color: var(--darkGrayishBlue);
+}
+
+.preview-content{
+  padding: 1rem;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  color: var(--darkGrayishBlue);
+
+}
+
+.accent-color{
+  font-family: var(--font-family-header);
+  color: var(--darkCyan);
+  margin-right: 1.5rem;
+}
+
+.btn-wrapper{
+  margin-top: 1rem;
+}
+
+.cta-btn{
+  width: 100%;
+  padding: 1rem 0;
+  color: var(--white);
+  border-radius: 12px;
+  background: var(--darkCyan);
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-btn:hover,
+.cta-btn:focus{
+  filter: brightness(0.85);
+
+}
+
+.fa-shopping-cart{
+  margin-right: 1rem;
+}
+
+.desktop-img{
+  display: none;
+}
