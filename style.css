@@ -17,6 +17,8 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
+
 }
 
 a:visited {
@@ -92,8 +94,8 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #eaafc8;
   padding: 2rem 1rem;
+  
 }
 
 
@@ -104,13 +106,15 @@ h3 {
 
 .card-title-link:hover,
 .card-title-link:focus{
-  color: #33006F;
+  color: #eaafc8;
+
   text-decoration: underline;
 }
 
 .card-title .fa-github:hover,
 .card-title .fa-github:focus{
-  color: #33006F;
+  color: #eaafc8;
+
 }
 
 .card{
