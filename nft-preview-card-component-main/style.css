@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --veryDarkBlue: hsl(217, 54%, 11%); /*Main BG*/
+  --veryDarkBlueCard: hsl(216, 50%, 16%); /*Card BG*/
+  --veryDarkBlueLine: hsl(215, 32%, 27%); /*Line*/
+  --white: hsl(0, 0%, 100%);
+  
+  --font-size-body: 18px;
+  --font-family: "Outfit", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+} 
+
+.img-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.img-container img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: var(--cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+
+}
+
+.img-container:hover .overlay,
+.img-container:focus .overlay {
+  opacity: .5;
+}
+
+.overlay img {
+  width: 50px;
+  height: auto;
+  fill: white;
+}
+
+
+body{
+  margin: 0;
+  font-family:  var(--font-family);
+  font-size: var(--font-size-body);
+  background-color: var(--veryDarkBlue);
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container{
+  position: relative;
+  margin: 1rem ;
+  max-width: 500px;
+  
+}
+
+.card{
+  margin-bottom: 1.5rem;
+  background: var(--veryDarkBlueCard);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header-text{
+  margin-bottom: 1.5rem;
+}
+
+.header-text > a {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.header-text > a:hover,
+.header-text > a:focus{
+  color: var(--cyan);
+}
+
+.header-text > p {
+  color: var(--softBlue);
+}
+
+.icon{
+  margin-right: .5rem;
+}
+
+.subheader-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--veryDarkBlueLine);
+  padding-bottom: 1rem;
+}
+
+.left,
+.right{
+  display: flex;
+  align-items: center;
+}
+
+.left > span {
+  color: var(--cyan);
+}
+
+.right > span {
+  color: var(--softBlue);
+}
+
+.creation{
+  display: flex;
+  align-items: center;
+  color: var(--softBlue)
+}
+
+.creator{
+  color: var(--white)
+}
+
+.creator:hover,
+.creator:focus{
+  cursor: pointer;
+  color: var(--cyan)
+}
+
+.avatar{
+  width: 2.25rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.footer {
+  color: var(--softBlue);
+}
+
+.footer-link{
+  color: var(--cyan);
+}
+
+.footer-link:hover,
+.footer-link:focus{
+  opacity: .5;
+}
