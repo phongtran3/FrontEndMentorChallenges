@@ -13,7 +13,7 @@
       <div class="container">
         <div class="card">
           <!-- Rating state start -->
-          <div id="ask-rating" class="rating-state inactive">
+          <div id="ask-rating" class="rating-state active">
             <div class="star-wrapper">
               <img class="star-icon" src="./images/icon-star.svg" alt="orange star icon" />
             </div>
@@ -26,27 +26,27 @@
                 <ul class="rating-list">
                   <li class="rating-number">1</li>
                   <li class="rating-number">2</li>
-                  <li class="rating-number selected">3</li>
+                  <li class="rating-number">3</li>
                   <li class="rating-number">4</li>
                   <li class="rating-number">5</li>
                 </ul>
               </div>
               <div class="submit-btn-wrapper">
-                <a href="#" class="submit-btn">Submit</a>
+                <button href="#" id="submit" class="submit-btn">Submit</button>
               </div>
             </div>
           </div>
           <!-- Rating state end -->
 
           <!-- Thank you state start -->
-          <div id="thank-you" class="thank-you-state active">
+          <div id="thank-you" class="thank-you-state inactive">
             <div class="thank-you-heading">
               <div class="thank-you-img">
                 <img src="./images/illustration-thank-you.svg" alt="card feedback from phone" />
               </div>
               <div class="rating-result">
                 <!-- Add rating here -->
-                <p class="result-text">You selected X out of 5</p>
+                <p id="result-text"></p>
               </div>
             </div>
             <div class="thank-you-body-text">
@@ -69,5 +69,6 @@
     </div>
 
     <!-- Thank you state end -->
+    <script src="./script.js"></script>
   </body>
 </html>
