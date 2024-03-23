@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+
+  --transparentWhite: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --veryLightGray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+
+  --font-size-body: 15px;
+  --font-family-body: "Lexend Deca", sans-serif;
+  --font-family-header: "Big Shoulders Display", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body{
+  margin: 0;
+  font-family:  var(--font-family-body);
+  font-size: var(--font-size-body);
+  background-color: var(--veryLightGray);
+}
+
+
+.footer {
+  color: var(--darkCyan);
+}
+
+.footer-link{
+  color: var(--veryDarkCyan);
+  font-weight: bold;
+}
+
+.footer-link:hover,
+.footer-link:focus{
+  opacity: .75;
+}
+
+.btn {
+  background-color: var(--veryLightGray);
+  padding: .75rem 2rem;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid transparent; 
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: transparent;
+  border: 2px solid var(--veryLightGray);
+  color: var(--veryLightGray);
+}
+
+.main{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  position: relative;
+  margin: 1rem ;
+  /* max-width: 1000px; */
+}
+
+.card{
+  margin-bottom: 1.5rem;
+}
+
+.col {
+  padding: 2.5rem 2rem;
+}
+
+.col p {
+  color: var(--transparentWhite);
+  line-height: 1.5rem;
+}
+
+.col h1 {
+  color: var(--veryLightGray);
+  font-family: var(--font-family-header);
+}
+
+.col-text{
+  margin: 1.5rem auto;
+}
+
+.sedan {
+  background-color: var(--brightOrange);
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px;
+}
+
+.sedan a {
+  color: var(--brightOrange);
+}
+
+.suv {
+  background-color: var(--darkCyan);
+}
+
+.suv a {
+  color: var(--darkCyan);
+}
+
+.luxury {
+  background-color: var(--veryDarkCyan);
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px;
+}
+
+.luxury a {
+  color: var(--veryDarkCyan);
+}
