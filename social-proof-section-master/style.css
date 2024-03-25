@@ -29,7 +29,27 @@ body {
   font-size: var(--font-body-size);
   font-family: var(--font-family-body);
   background-color: var(--white);
+  background: url(./images/bg-pattern-top-mobile.svg) left top no-repeat, url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
 }
+
+.main{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  position: relative;
+  margin: 2rem 1rem;
+  max-width: 1440px;
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+
 
 .footer {
   color: var(--darkGrayishMagenta);
