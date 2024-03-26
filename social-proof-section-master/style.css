@@ -45,10 +45,47 @@ body {
   max-width: 1440px;
 }
 
-.content {
+.content,
+.content-header,
+.header-text {
   margin-bottom: 2rem;
 }
 
+.header-text{
+  text-align: center;
+}
+
+.header-text h1 {
+  color: var(--veryDarkMagenta);
+  padding: 0 2rem;
+}
+
+.header-text p {
+  color: var(--darkGrayishMagenta);
+  line-height: 1.25rem;
+}
+
+.header-star-rating > div {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.stars {
+  margin-bottom: .5rem;
+}
+
+.stars img:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.first-rating,
+.second-rating,
+.third-rating {
+  color: var(--veryDarkMagenta);
+  font-weight: bold;
+  background-color: var(--lightGrayishMagenta);
+  padding: 1rem 0;
+}
 
 
 .footer {
